@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve Cryptography Problem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<style>
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Solve Cryptography Problem</h1>
+        <form id="solveForm" action="{{ url_for('solve_problem') }}" method="post">
+            <label for="algorithm">Choose an algorithm:</label>
+            <select name="algorithm" id="algorithm">
+                <option value="caesar">Caesar Cipher</option>
+                <option value="substitution">Substitution Cipher</option>
+                <option value="vigenere">Vigenère Cipher</option>
+            </select>
+            <label for="plaintext">Enter plaintext:</label>
+            <input type="text" name="plaintext" id="plaintext" required>
+            <label for="key">Enter key:</label>
+            <input type="text" name="key" id="key" required>
+            <button type="submit">Solve</button>
+        </form>
+    </div>
+</body>
+</html>
