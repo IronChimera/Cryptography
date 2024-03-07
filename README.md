@@ -5,7 +5,7 @@ This Flask application provides a simple web interface to solve various cryptogr
 ## Interface Screenshots
 
 ### Home Page
-![Home Page](screenshots/crypto.jpg)
+![Home Page](screenshots/cryptho.jpg)
 
 ### Solution Page
 ![Solution Page](screenshots/cryptosolve.jpg)
