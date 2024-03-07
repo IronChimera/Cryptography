@@ -5,10 +5,10 @@ This Flask application provides a simple web interface to solve various cryptogr
 ## Interface Screenshots
 
 ### Home Page
-![Home Page](screenshots/crypto.png)
+![Home Page](screenshots/crypto.jpg)
 
 ### Solution Page
-![Solution Page](screenshots/cryptosolve.png)
+![Solution Page](screenshots/cryptosolve.jpg)
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ To get started with this application, follow these steps:
 
 3. **Run the Application**: Execute `flask run` or `python app.py` to start the Flask application.
 
-4. **Access the Web Interface**: Open your web browser and go to `http://localhost:5000` to access the application.
+4. **Access the Web Interface**: Open your web browser and go to `http://localhost:5000/solve` to access the application.
 
 ## Usage
 
